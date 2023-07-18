@@ -162,13 +162,19 @@
 
       <!--Script to add pre-load screen-->
 
-    <script>
-      var loader = document.getElementById("preloader");
-
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
-    </script>
+     <script>
+          var loader = document.getElementById("preloader");
+    
+          window.addEventListener("load", function () {
+            loader.style.display = "none";
+    
+            const winterVideo = document.getElementsByClassName("winter-video");
+    
+            winterVideo.play().catch((error) => {
+              console.log("Autoplay error", error);
+            });
+          });
+      </script>
     
     
   </body>
