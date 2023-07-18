@@ -163,17 +163,19 @@
       <!--Script to add pre-load screen-->
 
      <script>
-          var loader = document.getElementById("preloader");
+         var loader = document.getElementById("preloader");
     
-          window.addEventListener("load", function () {
-            loader.style.display = "none";
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
     
-            const winterVideo = document.getElementById("winter-video");
+        const winterVideo = document.getElementById("winter-video");
     
-            winterVideo.play().catch((error) => {
-              console.log("Autoplay error", error);
-            });
+        winterVideo.addEventListener("canplay", function () {
+          winterVideo.play().catch((error) => {
+            console.log("Autoplay error", error);
           });
+        });
+      });
       </script>
     
     
