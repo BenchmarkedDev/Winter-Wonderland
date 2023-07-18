@@ -9,6 +9,12 @@
   color: #d4d0d0;
 }
 
+@media screen and (max-width: 800px) {
+  #preloader {
+    background-size: 35% !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .navbar {
     font-size: 13px;
@@ -418,4 +424,14 @@ input[type="submit"]:hover {
 
 ::placeholder {
   color: white; /* changes text color of input fields */
+}
+
+
+#preloader {
+  background: #000 url(images/preload.gif) no-repeat center center; /* black background, our preload gif, no repeats, and centered both horizontally and vertically */
+  background-size: 15%; /* Adjust the size to suit the gif & screen size */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10; /* Set the z-index of the pre-loader animation higher than everything else, so it appears above all other elements */
 }
