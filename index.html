@@ -23,13 +23,12 @@
 
     <div class="wrapper">
       <video
+        id="winter-video"
         class="winter-video"
         oncontextmenu="return false"
-        autoplay="true"
-        loop="true"
+        loop=""
         muted="true"
         playsinline
-        preload="auto"
       >
         <!--Auto plays the video, loops it, mutes it, and makes it so user cannot right-click the context menu-->
         <source src="video/winter.mov" type="video/mp4" />
@@ -169,7 +168,7 @@
           window.addEventListener("load", function () {
             loader.style.display = "none";
     
-            const winterVideo = document.getElementsByClassName("winter-video");
+            const winterVideo = document.getElementsById("winter-video");
     
             winterVideo.play().catch((error) => {
               console.log("Autoplay error", error);
