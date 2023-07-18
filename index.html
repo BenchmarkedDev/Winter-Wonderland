@@ -23,9 +23,9 @@
 
     <div class="wrapper">
       <video
-        id="winter-video"
         class="winter-video"
         oncontextmenu="return false"
+        autoplay=""
         loop=""
         muted="true"
         playsinline
@@ -162,21 +162,15 @@
 
       <!--Script to add pre-load screen-->
 
-     <script>
-         var loader = document.getElementById("preloader");
-    
+     
+    <script>
+      var loader = document.getElementById("preloader");
+
       window.addEventListener("load", function () {
         loader.style.display = "none";
-    
-        const winterVideo = document.getElementById("winter-video");
-    
-        winterVideo.addEventListener("canplay", function () {
-          winterVideo.play().catch((error) => {
-            console.log("Autoplay error", error);
-          });
-        });
       });
-      </script>
+   </script>
+    
     
     
   </body>
