@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://icons-for-free.com/iconfiles/png/512/forest+plant+snow+tree+winter+icon-1320167842819178082.png"
+    />
+    <title>Winter Wonderland 2023</title>
+    <link rel="stylesheet" href="Stylesheet.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#event-header">Event Info</a></li>
+        <li><a href="#gallery-header">Gallery</a></li>
+        <li><a href="#booking-header">Reserve Now</a></li>
+        <img class="nav-logo" src="images/nav-logo.png" alt="navigation logo" />
+      </ul>
+    </div>
+
+    <div class="wrapper">
+      <video
+        class="winter-video"
+        oncontextmenu="return false"
+        autoplay=""
+        loop=""
+        muted=""
+      >
+        <!--Auto plays the video, loops it, mutes it, and makes it so user cannot right-click the context menu-->
+        <source src="video/winter.mov" type="video/mp4" />
+      </video>
+      <img
+        class="wonderland-logo"
+        src="images/WW+Logo+extra+side+space.png"
+        alt="Title Logo"
+      />
+    </div>
+    <hr />
+
+    <div class="event-info">
+      <div class="snowflakes"></div>
+      <div class="info-bg"></div>
+      <div id="event-header">
+        <h2 class="event-title">Event Information</h2>
+      </div>
+      <div class="event-content">
+        <img
+          class="event-image"
+          src="images/santa.png"
+          alt="wonderland-image"
+        />
+        <p class="event-text">
+          Join us this winter as our park gets transformed into a magical Winter
+          Wonderland once again! You'll have the chance to experience something
+          very special, and forge some truly unforgettable memories in the
+          process! We've been organising this event anually for over 30 years
+          now, and with brand-new attractions arriving this year, there has
+          <em>never</em> been a better time to visit! <br /><br />
+          Get lost in the incredible scenery as you explore the enchanted snowy
+          meadows. Take a break at our world-famous bar, which is made entirely
+          out of ice and has been masterfully hand-crafted by some of the worlds
+          most famous architects! Visit Santa Claus, solve complex puzzles, sing
+          your heart out in Karaoke; there's an endless list of things you can
+          do! <br /><br />
+          No matter your age, we guarantee you that you will find something to
+          get excited about here at the Winter Wonderland. Coming as a family?
+          Coming Alone? No problem - There's plenty of fun to be had by all!
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="gallery">
+      <div class="gallery-background"></div>
+      <div class="gallery-bg"></div>
+      <div id="gallery-header">
+        <h2 class="gallery-title">Gallery</h2>
+      </div>
+      <section class="image-container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img id="slide-1" src="images/gallery16.jpg" alt="image1" />
+            <img id="slide-2" src="images/gallery14.jpg" alt="image1" />
+            <img id="slide-3" src="images/gallery14.jpeg" alt="image1" />
+            <img id="slide-4" src="images/gallery13.jpg" alt="image1" />
+            <img id="slide-5" src="images/gallery5.jpg" alt="image1" />
+            <img id="slide-6" src="images/gallery6.jpg" alt="image1" />
+            <img id="slide-7" src="images/gallery7.jpg" alt="image1" />
+            <img id="slide-8" src="images/gallery8.jpg" alt="image1" />
+            <img id="slide-9" src="images/gallery9.jpg" alt="image1" />
+            <img id="slide-10" src="images/gallery10.jpg" alt="image1" />
+            <img id="slide-11" src="images/gallery11.jpg" alt="image1" />
+            <img id="slide-12" src="images/gallery12.jpg" alt="image1" />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+            <a href="#slide-6"></a>
+            <a href="#slide-7"></a>
+            <a href="#slide-8"></a>
+            <a href="#slide-9"></a>
+            <a href="#slide-10"></a>
+            <a href="#slide-11"></a>
+            <a href="#slide-12"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr />
+    <div class="booking-container">
+      <div class="booking-background"></div>
+      <div class="booking-bg"></div>
+      <div id="booking-header">
+        <h2 class="booking-title">Reserve Now</h2>
+      </div>
+      <form onsubmit="ticketRequest()">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your surname.."
+        />
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your Email.." />
+
+        <label for="admission">Admission</label>
+        <select id="admission" name="admission">
+          <option value="single">Single</option>
+          <option value="couple">Couple</option>
+          <option value="family">Family</option>
+          <option value="school">School</option>
+          <option value="business">Business</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <!--Simple script for the Submit button-->
+    <script>
+      function ticketRequest() {
+        alert("Tickets Reserved");
+      }
+    </script>
+  </body>
+</html>
